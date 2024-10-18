@@ -1,6 +1,6 @@
 ### POST Request ke endpoint /
 POST /api/main/ HTTP/1.1
-Host: localhost:1000
+Host: localhost
 Content-Type: application/json
 
 {
@@ -9,41 +9,41 @@ Content-Type: application/json
 
 ### POST Request ke endpoint /
 POST /api/main/ HTTP/1.1
-Host: localhost:1000
+Host: localhost
 Content-Type: application/x-www-form-urlencoded
 
 key=value
 
 ### GET Request ke endpoint /:id
 GET /api/main/123 HTTP/1.1
-Host: localhost:1000
+Host: localhost
 
 ### GET Request ke endpoint /:id
 GET /api/main/123 HTTP/1.1
-Host: localhost:1000
+Host: localhost
 Accept-Encoding: br
 
 ### GET Request ke endpoint /:id
 GET /api/main/123 HTTP/1.1
-Host: localhost:1000
+Host: localhost
 Accept-Encoding: gzip
 
 ### GET Request ke endpoint /:id
 GET /api/main/123 HTTP/1.1
-Host: localhost:1000
+Host: localhost
 Accept-Encoding: deflate
 
 ### GET Request ke endpoint /:id
 GET /api/main/123/not-found HTTP/1.1
-Host: localhost:1000
+Host: localhost
 
 ### GET Request untuk semua data di endpoint /
 GET /api/main/ HTTP/1.1
-Host: localhost:1000
+Host: localhost
 
 ### PATCH Request ke endpoint /:id
 PATCH /api/main/123 HTTP/1.1
-Host: localhost:1000
+Host: localhost
 Content-Type: application/json
 
 {
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ### PUT Request ke endpoint /:id
 PUT /api/main/123 HTTP/1.1
-Host: localhost:1000
+Host: localhost
 Content-Type: application/json
 
 {
@@ -61,4 +61,4 @@ Content-Type: application/json
 
 ### DELETE Request ke endpoint /:id
 DELETE /api/main/123 HTTP/1.1
-Host: localhost:1000
+Host: localhost

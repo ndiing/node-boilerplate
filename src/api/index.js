@@ -1,5 +1,5 @@
 const express = require("express");
-const permissions = [] || require("../../permissions.json");
+const permissions =  require("../../permissions.json");
 const { security, cors, cookies, compression, messages, auth, missing, catchAll } = require("@ndiinginc/router");
 
 const router = express.Router();
