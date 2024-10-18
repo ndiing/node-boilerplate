@@ -1,0 +1,64 @@
+### POST Request ke endpoint /
+POST /api/main/ HTTP/1.1
+Host: localhost:1000
+Content-Type: application/json
+
+{
+    "key": "value" 
+}
+
+### POST Request ke endpoint /
+POST /api/main/ HTTP/1.1
+Host: localhost:1000
+Content-Type: application/x-www-form-urlencoded
+
+key=value
+
+### GET Request ke endpoint /:id
+GET /api/main/123 HTTP/1.1
+Host: localhost:1000
+
+### GET Request ke endpoint /:id
+GET /api/main/123 HTTP/1.1
+Host: localhost:1000
+Accept-Encoding: br
+
+### GET Request ke endpoint /:id
+GET /api/main/123 HTTP/1.1
+Host: localhost:1000
+Accept-Encoding: gzip
+
+### GET Request ke endpoint /:id
+GET /api/main/123 HTTP/1.1
+Host: localhost:1000
+Accept-Encoding: deflate
+
+### GET Request ke endpoint /:id
+GET /api/main/123/not-found HTTP/1.1
+Host: localhost:1000
+
+### GET Request untuk semua data di endpoint /
+GET /api/main/ HTTP/1.1
+Host: localhost:1000
+
+### PATCH Request ke endpoint /:id
+PATCH /api/main/123 HTTP/1.1
+Host: localhost:1000
+Content-Type: application/json
+
+{
+    "key": "newValue" 
+}
+
+### PUT Request ke endpoint /:id
+PUT /api/main/123 HTTP/1.1
+Host: localhost:1000
+Content-Type: application/json
+
+{
+    "key": "updatedValue" 
+}
+
+### DELETE Request ke endpoint /:id
+DELETE /api/main/123 HTTP/1.1
+Host: localhost:1000
