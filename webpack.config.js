@@ -12,6 +12,14 @@ const config = {
         libraryTarget: "commonjs2", // Output format untuk Node.js
     },
     target: "node", // Target untuk Node.js
+    module: {
+        rules: [
+            {
+                test: /\.node$/,
+                loader: "node-loader",
+            },
+        ],
+    },
 };
 
 module.exports = () => {

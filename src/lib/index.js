@@ -53,3 +53,6 @@
 //     create,
 // }=require('@ndiinginc/fetch')
 // const fetch = require('@ndiinginc/fetch')
+// fetch('http://google.com')
+// .then(console.log)
+// .catch(console.log)
