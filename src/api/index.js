@@ -1,5 +1,5 @@
 const express = require("express");
-const { security, cors, cookies, compression, body, authorization, missing, catchAll } = require("../../middleware/index.js");
+const { security, cors, cookies, compression, body, authorization, missing, catchAll } = require("../middleware/index.js");
 
 const router = express.Router();
 

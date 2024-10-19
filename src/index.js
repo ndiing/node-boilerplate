@@ -3,7 +3,7 @@ const express = require("express");
 const { getCertsForHostname } = require("@ndiinginc/cert");
 const http = require("http");
 const https = require("https");
-const { redirect } = require("../middleware/index.js");
+const { redirect } = require("./middleware/index.js");
 
 const options = getCertsForHostname("localhost");
 const app = express();
