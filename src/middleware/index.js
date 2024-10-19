@@ -177,6 +177,7 @@ function redirect() {
             if (!req.socket.encrypted) {
                 return res.redirect(`https://${req.headers.host}${req.url}`);
             }
+
             next();
         } catch (error) {
             next(error);
@@ -187,6 +188,7 @@ function redirect() {
 function missing() {
     return function (req, res, next) {
         res.status(404);
+
         next(new Error("Not Found"));
     };
 }
@@ -196,7 +198,9 @@ function catchAll() {
         if (res.statusCode >= 200 && res.statusCode < 300) {
             res.status(500);
         }
+
         err = JSON.parse(JSON.stringify(err, Object.getOwnPropertyNames(err)));
+
         res.json({ message: err.message });
     };
 }
