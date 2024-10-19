@@ -1,6 +1,6 @@
 {
-    "main": "dist/main.js",
-    "output": "out/main.blob",
+    "main": "dist/bundle.js",
+    "output": "out/bundle.blob",
     "disableExperimentalSEAWarning": true,
     "useSnapshot": false,
     "useCodeCache": true,

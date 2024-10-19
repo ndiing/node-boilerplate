@@ -2,24 +2,19 @@
 
 const path = require("path");
 
-const isProduction = process.env.NODE_ENV == "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 const config = {
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "main.js", // Tambahkan nama file output
-        libraryTarget: "commonjs2", // Output format untuk Node.js
+        filename: "bundle.js", // Nama file output
+        libraryTarget: "commonjs2", // Menetapkan output sebagai CommonJS
     },
-    target: "node", // Target untuk Node.js
-    module: {
-        rules: [
-            {
-                test: /\.node$/,
-                loader: "node-loader",
-            },
-        ],
-    },
+    target: "node", // Menambahkan target untuk Node.js
+    plugins: [
+        // Tambahkan plugin yang diperlukan di sini
+    ],
 };
 
 module.exports = () => {
