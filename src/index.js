@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "development") {
     require("./lib/index.js");
 }
 
-const options = getCertsForHostname(process.env.HOST);
+const options = getCertsForHostname(process.env.HOSTNAME);
 const app = express();
 
 app.use("/api", require("./api/index.js"));

@@ -17,7 +17,7 @@
     "description": "My webpack project",
     "dependencies": {
         "@ndiinginc/cert": "^2.0.5",
-        "@ndiinginc/env": "^1.0.5",
+        "@ndiinginc/env": "^1.0.6",
         "@ndiinginc/fetch": "^3.0.4",
         "@ndiinginc/jwt": "^2.0.4",
         "@ndiinginc/otp": "^2.0.4",
