@@ -18,7 +18,7 @@
     "license": "ISC",
     "devDependencies": {
         "@eslint/js": "^9.13.0",
-        "@types/node": "^22.7.7",
+        "@types/node": "^22.7.8",
         "@webpack-cli/generators": "^3.0.7",
         "eslint": "^9.13.0",
         "globals": "^15.11.0",
@@ -26,8 +26,8 @@
         "webpack-cli": "^5.1.4"
     },
     "dependencies": {
-        "@ndiinginc/cert": "^2.0.5",
-        "@ndiinginc/env": "^2.0.0",
+        "@ndiinginc/cert": "^2.0.6",
+        "@ndiinginc/env": "^2.0.4",
         "express": "^4.21.1",
         "ws": "^8.18.0"
     }
